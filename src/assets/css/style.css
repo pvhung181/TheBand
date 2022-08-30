@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* :root {
+    --text-font-size: 1rem;
+    --heading-font-size: 2rem;
+} */
+
+
+header {
+    height: 46px;
+    background-color: black;
+
+}
+
+#nav li {
+    display: inline-block;
+    line-height: 46px;
+    
+}
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0 24px;
+}
+
+#nav li a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .subnav {
+    display: none;
+}
