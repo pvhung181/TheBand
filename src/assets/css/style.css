@@ -10,10 +10,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* :root {
+:root {
     --text-font-size: 1rem;
     --heading-font-size: 2rem;
-} */
+}
 
 
 header {
