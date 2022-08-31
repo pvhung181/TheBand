@@ -15,31 +15,59 @@ html {
     --heading-font-size: 2rem;
 }
 
+#main {
+    background-color: #333;
+    min-height: 2000px;
+}
 
 header {
     height: 46px;
     background-color: black;
-
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
-#nav li {
+#nav > li {
     display: inline-block;
     line-height: 46px;
-    
+    position: relative;
 }
 
-#nav li a {
+#nav > li > a {
     text-decoration: none;
     color: white;
     display: inline-block;
     padding: 0 24px;
 }
 
-#nav li a:hover {
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
     background-color: #ccc;
     color: black;
 }
 
+#nav > li:hover ul {
+    display: block;
+}
+
 #nav .subnav {
+    position: absolute;
+    background-color: white;
     display: none;
 }
+
+#nav, .subnav {
+    list-style-type: none;
+    color: black;
+}
+
+#nav .subnav li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 24px;
+    display: block;
+    width: 100%;
+}
+
