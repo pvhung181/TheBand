@@ -16,7 +16,6 @@ html {
 }
 
 #main {
-    background-color: #333;
     min-height: 2000px;
 }
 
@@ -48,7 +47,7 @@ header {
     color: black;
 }
 
-#nav > li:hover ul {
+#nav  li:hover .subnav {
     display: block;
 }
 
@@ -56,9 +55,17 @@ header {
     position: absolute;
     background-color: white;
     display: none;
+    min-width: 46px;
+    left: 0;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#nav, .subnav {
+#nav {
+    display: inline-block;
+}
+
+.subnav {
     list-style-type: none;
     color: black;
 }
@@ -66,8 +73,27 @@ header {
 #nav .subnav li a {
     text-decoration: none;
     color: black;
-    padding: 0 24px;
+    padding: 0 1rem;
     display: block;
     width: 100%;
+    line-height: 38px;
 }
 
+#nav .arrow-down {
+    font-size: 14px;
+}
+
+header .search-button {
+    float: right;
+    color: white;
+    padding: 0 26px;
+}
+
+header .search-button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+header .search-icon {
+    line-height: 46px;
+}
