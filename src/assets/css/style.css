@@ -15,8 +15,8 @@ html {
     --heading-font-size: 2rem;
 }
 
-#main {
-    min-height: 2000px;
+.clear {
+    clear: both;
 }
 
 header {
@@ -25,6 +25,8 @@ header {
     position: fixed;
     right: 0;
     left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 #nav > li {
@@ -39,7 +41,6 @@ header {
     display: inline-block;
     padding: 0 24px;
 }
-
 
 #nav .subnav li:hover a,
 #nav > li:hover > a {
@@ -96,4 +97,87 @@ header .search-button:hover {
 
 header .search-icon {
     line-height: 46px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background-image: url('../img/slider/slider_chicago.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+#slider .text-heading {
+    margin: 25px 0;
+    font-weight: 450;
+}
+
+#slider .text-description {
+   text-shadow: 0 0 10px #000 ;
+     
+}
+
+section .section-content {
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section .section-heading {
+    font-size: 30px;
+    text-align: center;
+    margin: 25px 0;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+section .section-sub-heading {
+    font-size: 15px;
+    opacity: 0.6;
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0;
+}
+
+section .about {
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+section .member-list {
+    margin-top: 48px;
+}
+
+section .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+section .member-avatar {
+    width: 154px;
+    border-radius: 4px;
+    padding: 32px 0;
+}
+
+section .section-tour {
+    background-color: black;
+}
+
+section .tour-heading,
+section .tour-sub-heading {
+    color: white;
 }
