@@ -13,10 +13,10 @@
     <div id="main">
         <header>
             <ul id="nav">
-                <li><a href="./test.html">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#the_band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
@@ -43,7 +43,7 @@
         <!-- Begin section -->
         <section>
             <!-- about -->
-            <div class="section-about">
+            <div id="the_band" class="section-about">
                 <div class="section-content">
                     <h2 class="section-heading">THE BAND</h2>
                     <p class="section-sub-heading">We love music</p>
@@ -69,20 +69,94 @@
                 </div>
             </div>
             <!-- tour date -->
-            <div class="section-tour">
+            <div id="tour" class="section-tour">
                 <div class="section-content ">
                     <h2 class="section-heading tour-heading">TOUR DATES</h2>
                     <p class="section-sub-heading tour-sub-heading">Remember to book your tickets!</p>
                     
+                    <ul class="tour-ticket">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                    <!-- Place tour -->
+                <div class="place-list">
+                    <div class="place-item">
+                        <img src="../img/places/newyork.jpg" alt="" class="place-img">
+                        <div class="place-content">
+                            <h3 class="place-heading">New York</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket-btn js-buy-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="place-item">
+                        <img src="../img/places/paris.jpg" alt="" class="place-img">
+                        <div class="place-content">
+                            <h3 class="place-heading">Paris</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket-btn js-buy-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="place-item">
+                        <img src="../img/places/sanfran.jpg" alt="" class="place-img">
+                        <div class="place-content">
+                            <h3 class="place-heading">San Francisco</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket-btn js-buy-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
                 </div>
+                </div>
+                
             </div>
             <!-- Contact -->
-            <div class="section-content">
-                <h2 class="section-heading">CONTACT</h2>
-                <p class="section-sub-heading">Fan? Drop a note!</p>
+            <div id="contact" class="contact_section">
+                <div class="section-content">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <p class="section-sub-heading">Fan? Drop a note!</p>
+                </div>
             </div>
         </section>
     </div>
-</div>
+    <div class="modal">
+        <div class="modal-container">
+            <i class="ti-close modi-close"></i>
+            <!-- head modal -->
+            <div class="header-modal">
+                <i class="ti-bag"></i>
+                Tickets
+            </div>
+            <!-- body modal -->
+            <div class="body-modal">
+                <label for="ticket-quantity" class="buy-modal">
+                     <i class="ti-shopping-cart"></i>
+                     Tickets, $15 per person
+                </label>
+                <input type="text" id="ticket-quantity" placeholder="How many?" class="ticket-input">
+    
+                <label for="ticket-email" class="email-modal">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="text" id="ticket-email" placeholder="Enter email..." class="ticket-input">
+                    
+                <button class="pay-button">PAY <i class="ti-check"></i></button>
+                </div>
+            <!-- footer modal -->
+            <div class="footer-modal">
+                <p>Need <a href="">help?</a></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="/src/js/buy_ticket.js">
+        
+    </script>
 </body>
 </html>
