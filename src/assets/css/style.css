@@ -370,3 +370,69 @@ section .tour-sub-heading {
         transform: translateY(0);
     }
 }
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+     width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.input-info {
+    float: left;
+    text-align: right;
+}
+
+.contact-content {
+    padding-top: 50px;
+}
+
+.contact-infor {
+    font-size: 18px;
+}
+
+.contact-infor i {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.form-control {
+    padding: 10px;
+    width: 100%;
+}
+
+.message {
+    margin-top: 18px;
+}
+
+.form-submit {
+    border-style: none;
+    background-color: #000;
+    color: white;
+    margin-top: 18px;
+    padding: 10px 16px;
+    float: right;
+}
+
+.form-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
